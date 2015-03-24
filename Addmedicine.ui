@@ -32,6 +32,9 @@
    </property>
   </widget>
   <widget class="QLineEdit" name="Medname">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -65,6 +68,9 @@
    </property>
   </widget>
   <widget class="QLineEdit" name="MedDose">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>140</x>
