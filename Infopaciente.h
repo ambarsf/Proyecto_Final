@@ -26,6 +26,8 @@ private slots:
 
     void on_Medicamentos_clicked();
 
+    void on_pushButton_3_clicked();
+
 private:
     Ui::Infopaciente *ui;
     vector<Patient*> *Patients;

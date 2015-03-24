@@ -37,15 +37,15 @@ void Infopaciente::on_ListPacientes_currentIndexChanged(int index)
     vector<Disease*> diseases=patient->getDiseases();
     vector<Medicine*> medicines=patient->getMedicines();
     if(!(diseases.empty())){
-        ui->Enfermedades->setEnabled(false);
-    }else{
         ui->Enfermedades->setEnabled(true);
+    }else{
+        ui->Enfermedades->setEnabled(false);
     }
 
     if (!(medicines.empty())){
-        ui->Medicamentos->setEnabled(false);
-    }else{
         ui->Medicamentos->setEnabled(true);
+    }else{
+        ui->Medicamentos->setEnabled(false);
     }
 }
 
@@ -63,4 +63,9 @@ void Infopaciente::on_Medicamentos_clicked()
     Infomedicina diag(0,Patients,numPaciente);
     diag.setModal(true);
     diag.exec();
+}
+
+void Infopaciente::on_pushButton_3_clicked()
+{
+    this->close();
 }

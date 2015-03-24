@@ -341,6 +341,11 @@
      <height>271</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
   </widget>
  </widget>
  <resources/>
