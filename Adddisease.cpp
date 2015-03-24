@@ -27,6 +27,10 @@ AddDisease::AddDisease(QWidget *parent,vector<Patient*> *patients,int num) :
     ui->EnfTipo->addItem("Metabolica");
     ui->EnfTipo->addItem("Neurodegenerativas");
 
+    ui->EnfGravedad->addItem("Leve");
+    ui->EnfGravedad->addItem("Media");
+    ui->EnfGravedad->addItem("Grave");
+
     this->Patients=patients;
     this->numpaciente=num;
 }
@@ -41,6 +45,7 @@ void AddDisease::on_pushButton_clicked()
     sintomas.clear();
     sintomas.push_back(ui->EnfSintomas->text());
     QMessageBox::information(this,"Agregado","Sintoma agregado exitosamente");
+    ui->EnfSintomas->setText("");
 
 }
 

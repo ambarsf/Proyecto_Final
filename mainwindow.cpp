@@ -83,7 +83,7 @@ void MainWindow::on_InfoNurse_clicked()
 void MainWindow::on_InfoPacient_clicked()
 {
     if (Patients->size()>0){
-        Infopaciente diag;
+        Infopaciente diag(0,Patients);
         diag.setModal(true);
         diag.exec();
     }else{
@@ -117,7 +117,7 @@ void MainWindow::on_ControlNurse_clicked()
 void MainWindow::on_ControlPac_clicked()
 {
     if (Patients->size()>0){
-        Addpacient diag;
+        Addpacient diag(0,Patients);
         diag.setModal(true);
         diag.exec();
     }else{
