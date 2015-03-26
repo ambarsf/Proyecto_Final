@@ -7,7 +7,7 @@
 using std::stringstream;
 using std::vector;
 
-Doctor::Doctor(QString name, unsigned int age, QString gender, unsigned int id, QString specialty, unsigned int phone, double salary, QString schedule):Person(name,age,gender,id){
+Doctor::Doctor(QString name, unsigned int age, QString gender, unsigned int id, QString specialty, unsigned int phone,QString schedule):Person(name,age,gender,id){
 	this->specialty=specialty;
 	this->phone=phone;
 	this->salary=salary;

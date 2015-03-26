@@ -8,11 +8,11 @@
 using std::vector;
 
 class Nurse: public Person{
-	double salary;
+    double salary=1000;
     QString schedule;
 	vector<Patient*> patients;
 public:
-    Nurse(QString, unsigned int, QString, unsigned int, double, QString);
+    Nurse(QString, unsigned int, QString, unsigned int, QString);
 	Nurse(const Nurse& );
 	~Nurse();
     virtual QString toString() const;

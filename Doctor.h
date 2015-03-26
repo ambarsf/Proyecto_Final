@@ -10,11 +10,11 @@ using std::vector;
 class Doctor: public Person {
     QString specialty;
 	unsigned int phone;
-	double salary;
+    double salary=2000;
     QString schedule;
 	vector<Patient*> patients;
 public:
-    Doctor(QString, unsigned int, QString, unsigned int, QString, unsigned int, double, QString);
+    Doctor(QString, unsigned int, QString, unsigned int, QString, unsigned int,QString);
 	Doctor(const Doctor&);
 	~Doctor();
     virtual QString toString() const;

@@ -135,4 +135,9 @@ void MainWindow::on_RefreshButton_clicked()
     ui->NoNurse->display(numNurse);
     ui->NoPacients->display(numPatient);
     ui->Personas->setValue(Total);
+    if (Total==100){
+        ui->AddDoc->setEnabled(false);
+        ui->AddPatient->setEnabled(false);
+        ui->AddNurse->setEnabled(false);
+    }
 }

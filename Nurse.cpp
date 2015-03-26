@@ -8,7 +8,7 @@
 using std::stringstream;
 using std::vector;
 
-Nurse::Nurse(QString name, unsigned int age, QString gender, unsigned int id, double salary, QString schedule):Person(name,age,gender,id){
+Nurse::Nurse(QString name, unsigned int age, QString gender, unsigned int id,QString schedule):Person(name,age,gender,id){
 	this->salary=salary;
 	this->schedule=schedule;
 	vector<Patient*> patients;

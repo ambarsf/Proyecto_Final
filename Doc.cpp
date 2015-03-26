@@ -13,7 +13,10 @@ Doc::Doc(QWidget *parent,vector<Doctor*> *doctors) :
     this->Doctors=doctors;
     ui->DHorario->addItem("Diurno");
     ui->DHorario->addItem("Nocturno");
+    ui->DocSalario->setText("2000");
+    ui->DocSalario->setEnabled(false);
 }
+
 
 Doc::~Doc()
 {
@@ -32,10 +35,9 @@ void Doc::on_AddDoctor_clicked()
         gender="Masculino";
     };
     QString specialty=ui->DocEspecialidad->text();
-    double salary=ui->DocSalario->text().toDouble();
     QString schedule=ui->DHorario->currentText();
     unsigned int phone=ui->DocPhone->text().toInt();
-    Doctors->push_back(new Doctor(name,age,gender,id,specialty,phone,salary,schedule));
+    Doctors->push_back(new Doctor(name,age,gender,id,specialty,phone,schedule));
     QMessageBox::information(this,"Agregado","El Doctor ha sido agregado exitosamente.");
     this->close();
 };

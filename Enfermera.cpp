@@ -13,6 +13,8 @@ Enfermera::Enfermera(QWidget *parent,vector<Nurse*> *nurses) :
     ui->EnfHorario->addItem("Diurno");
     ui->EnfHorario->addItem("Nocturno");
     this->Nurses=nurses;
+    ui->EnfSal->setText("1000");
+    ui->EnfSal->setEnabled(false);
 }
 
 Enfermera::~Enfermera()
@@ -31,9 +33,8 @@ void Enfermera::on_pushButton_clicked()
         gender="Masculino";
     };
     unsigned int id=ui->EnfID->text().toInt();
-    double salary=ui->EnfSal->text().toDouble();
     QString schedule=ui->EnfHorario->currentText();
-    Nurses->push_back(new Nurse(name,age,gender,id,salary,schedule));
+    Nurses->push_back(new Nurse(name,age,gender,id,schedule));
     QMessageBox::information(this,"Agregado","La Enfermera ha sido agregado exitosamente.");
     this->close();
 }
