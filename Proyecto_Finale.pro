@@ -69,3 +69,6 @@ FORMS    += mainwindow.ui \
     Infoenfermedad.ui \
     Infomedicina.ui \
     Addpacient.ui
+
+RESOURCES += \
+    Image.qrc

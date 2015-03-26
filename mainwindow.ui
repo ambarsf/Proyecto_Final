@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>550</x>
-      <y>130</y>
+      <y>150</y>
       <width>151</width>
       <height>29</height>
      </rect>
@@ -89,13 +89,13 @@
      <string>Refrescar</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>471</x>
       <y>20</y>
       <width>291</width>
-      <height>91</height>
+      <height>113</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
@@ -168,7 +168,7 @@
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>130</y>
+      <y>150</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -186,7 +186,7 @@
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>130</y>
+      <y>150</y>
       <width>87</width>
       <height>29</height>
      </rect>
@@ -200,7 +200,7 @@
      <string>Control</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>15</x>
@@ -347,39 +347,40 @@
      </item>
     </layout>
    </widget>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>label</zorder>
-   <zorder>AddDoctor</zorder>
-   <zorder>AddNurse</zorder>
-   <zorder>AddPacient</zorder>
+   <widget class="QLabel" name="image">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>411</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Image.qrc">:/hospital.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>layoutWidget</zorder>
    <zorder>layoutWidget</zorder>
    <zorder>label</zorder>
-   <zorder>label</zorder>
    <zorder>label_2</zorder>
-   <zorder>NoDoc</zorder>
-   <zorder>NoPacients</zorder>
-   <zorder>NoNurse</zorder>
-   <zorder>label_3</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_5</zorder>
-   <zorder>InfoNurse</zorder>
-   <zorder>InfoDoctor</zorder>
-   <zorder>InfoPacient</zorder>
    <zorder>label_6</zorder>
-   <zorder>AddPatient</zorder>
-   <zorder>AddNurse</zorder>
-   <zorder>AddDoc</zorder>
    <zorder>label_7</zorder>
    <zorder>Personas</zorder>
-   <zorder>ControlPac</zorder>
-   <zorder>ControlPac</zorder>
    <zorder>RefreshButton</zorder>
+   <zorder>image</zorder>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="Image.qrc"/>
+ </resources>
  <connections/>
 </ui>
